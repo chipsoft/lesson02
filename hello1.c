@@ -7,6 +7,7 @@ MODULE_AUTHOR("Denis Suprunenko <chipsoft@gmail.com");
 MODULE_DESCRIPTION("Hello, world in Linux Kernel Training, Module 01");
 MODULE_LICENSE("Dual BSD/GPL");
 
+// Эту функцию модуля будем использовать другим модулем
 extern void print_hello(void)
 {
 	printk(KERN_EMERG "Hello, world from Module 01!\n");	
